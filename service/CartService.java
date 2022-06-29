@@ -66,7 +66,7 @@ public class CartService {
         Optional<Cart> optionalCart = cartRepository.findById(cartItemId);
 
         if (optionalCart.isEmpty()) {
-            throw new CustomException("cart item id is invalid: " + cartItemId);
+            throw new CustomException("cart item id is invalid: (El Item Id del carro es invalido) " + cartItemId);
         }
 
         Cart cart = optionalCart.get();
